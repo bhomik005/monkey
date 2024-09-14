@@ -1,6 +1,7 @@
-## Monkey (An Interpreter) - Work in Progress
+## Monkey (An Interpreter) - A study project
+### Book reference - https://interpreterbook.com/
 
-### Some Notes - 
+### Rough Notes - 
 
 Interpreters - The programs that take other programs as their input and produce something.  
 There is a huge difference between the interpreters and compilers?
