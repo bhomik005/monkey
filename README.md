@@ -82,7 +82,7 @@ Monkey programming language will have the following features -
    twice(addTwo, 2); // => 6 (calling addTwo function twice)
    ```
 
-We are going to build following parts / components 
+We are going to build following parts / components -
 1. Lexer
 2. Parser
 3. Abstract Syntax Tree
