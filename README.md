@@ -1,5 +1,5 @@
 ## Monkey (An Interpreter) - A study project
-### Book reference - https://interpreterbook.com/
+### Referring to this amazing book written by Thorsten Ball - https://interpreterbook.com/
 
 ### Rough Notes - 
 
