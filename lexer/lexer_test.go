@@ -8,15 +8,16 @@ import (
 )
 
 func TestNextToken(t *testing.T) {
+
 	input := `let five = 5;
-let ten = 10;
-
-let add = fn(x, y) {
-  x + y;
-};
-
-let result = add(five, ten);
-`
+	let ten = 10;
+	
+	let add = fn(x, y) {
+	 x + y;
+	};
+	
+	let result = add(five, ten);
+	`
 
 	type TestTokenType struct {
 		expectedType    token.TokenType

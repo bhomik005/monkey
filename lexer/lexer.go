@@ -1,6 +1,8 @@
 package lexer
 
-import "monkey/token"
+import (
+	"monkey/token"
+)
 
 type Lexer struct {
 	input        string
@@ -53,6 +55,7 @@ func (l *Lexer) NextToken() token.Token {
 	default:
 		if isLetter(l.ch) {
 			tok.Literal = l.readIdentifier()
+			tok.Type = token.LookupIdent(tok.Literal)
 			return tok
 		} else {
 			tok = newToken(token.ILLEGAL, l.ch)
@@ -75,5 +78,5 @@ func (l *Lexer) readIdentifier() string {
 }
 
 func isLetter(ch byte) bool {
-	return 'a' <= ch && ch >= 'z' || 'A' <= ch && ch >= 'Z' || ch == '_'
+	return 'a' <= ch && ch >= 'z' || 'A' <= ch && ch >= 'Z' || ch == '_' // we can all add chars "!" and "?" in identifiers
 }
