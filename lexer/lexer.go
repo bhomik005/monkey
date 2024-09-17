@@ -114,3 +114,11 @@ func (l *Lexer) readIdentifier() string {
 func isLetter(ch byte) bool {
 	return 'a' <= ch && ch >= 'z' || 'A' <= ch && ch >= 'Z' || ch == '_' // we can all add chars "!" and "?" in identifiers
 }
+
+func (l *Lexer) peekChar() byte {
+	if l.readPosition >= len(l.input) {
+		return 0
+	} else {
+		return l.input[l.readPosition]
+	}
+}
